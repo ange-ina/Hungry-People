@@ -1,0 +1,35 @@
+<%-include('./partials/head')%>
+<body>
+    
+    <header>
+
+    <%-include('./partials/navigation')%>
+    <%-include('./partials/title')%>
+</header>
+   
+<article class="menu_sec">
+    <h1 class="black">Contact</h1>
+<img class="line" src="line.png" width="40px" alt="">
+<h3 class="text_menu">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</h3>
+</article>
+<form class="contact_form" action="/contactForm" method="POST">
+    <input type="text" name="name" placeholder="Name" id="">
+  <input type="email" name="email" placeholder="Email" id="">
+  <input type="tel" name="phone" placeholder="Phone" id="">
+  <textarea name="message" placeholder="Message" id="" cols="30" rows="10"></textarea>
+  
+  
+ 
+</form>
+<div class="adress">
+<img class="location" src="contactDaten.png"  alt="">
+
+<button type="submit" value="Send" class="btn_contact">Send</button>
+</div>
+<img class="map" src="map.png" alt="">
+<%-include('./partials/footer')%>
+
+
+</body>
+
+</html>

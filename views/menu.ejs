@@ -1,0 +1,47 @@
+<%-include('./partials/head')%>
+<body>
+    
+    <header>
+
+    <%-include('./partials/navigation')%>
+    <%-include('./partials/title')%>
+    
+</header>
+<article class="menu_sec">
+    <h1 class="black">Delicious Menu</h1>
+<img class="line" src="line.png" width="40px" alt="">
+<h3 class="text_menu">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</h3>
+</article>
+<div class="dishes">
+    <p>Soupe</p>
+    <p>Pizza</p>
+    <p>Pasta</p>
+    <p>Dessert</p>
+    <p>Wine</p>
+    <p>Beer</p>
+    <p>Drinks</p>
+
+</div>
+
+    <section class="grid">
+
+        <%dishes.forEach(elt=>{%>
+        <div class="price">
+            <div>
+            <h2><%=elt.name%></h2>
+            <p><%=elt.description%></p>
+        </div>
+            <h2><%=elt.price%></h2>
+        </div>
+       
+        
+           
+       
+        <%})%>
+   
+    </section>
+
+<%-include('./partials/footer')%>
+</body>
+
+</html>
